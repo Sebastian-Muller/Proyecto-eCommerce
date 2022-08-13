@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+/* inicio header */
+.headerSuperior {
+    width: 100vw;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+ 
+.headerMain {
+    width: 100vw;
+    height: 130px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 5%;
+    align-items: center;
+}
+.logoEmpresa {
+    width: 8vw;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.searchBox {
+    background-color: whitesmoke;
+    width: 40vw;
+    margin-left: 15vw;
+}
+.cuentaUsuario {
+    background-color: whitesmoke;
+    display: inline-flex;
+    width: 25vw;
+    gap: 15%;
+    justify-content: space-around;
+}
+ 
+/* inicio barra de navegacion */
+ 
+.navBar {
+    width: 100vw;
+    height: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: lightgreen;
+    padding-top: 10px;
+}
+.navBar ul {
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.navBar ul li {
+    list-style-type: none;
+   
+}
+ 
+/* inicio banner main */
+ 
+.mainBanner {
+    width: 100vw;
+    height: 350px;
+    background-color
+}
+.inferiorBanner {
+    display: flex;
+    justify-content: space-between;
+}
+.imgInferiorBanner {
+    width: 33%;
+    height: 60px;
+    background-color: lightseagreen;
+    margin-top: 8px;
+}
+ 
+/* inicio productos main */
+.productosDestacados {
+    width: 80vw;
+    height: 350px;
+    background-color: lightpink;
+    margin: 10%;
+    display: flex;
+}
+.destacadosImg {
+    width: 20vw;
+    height: 350px;
+    background-color: whitesmoke;
+}
+.producto {
+    width: 15vw;
+    height: 310px;
+    background-color: lightyellow;
+    margin-top: 2.5vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+ 
+/* inicio grilla imagenes */
+ 
+.grillaImg {
+    width: 80vw;
+    height: 350px;
+    background-color: lightpink;
+    margin: 10%;
+    display: flex;
+}
+.grillaImgSup {
+    background-color: green;
+ 
+}
+.imgEnlace {
+    width: 320px;
+    height: 160px;
+    background-color: whitesmoke;
+}
