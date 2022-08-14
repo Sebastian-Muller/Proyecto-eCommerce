@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
- 
+
 /* inicio header */
 .headerSuperior {
     width: 100vw;
@@ -13,7 +13,7 @@
     align-items: center;
     background-color: lightblue;
 }
- 
+
 .headerMain {
     width: 100vw;
     height: 130px;
@@ -24,26 +24,30 @@
     padding-right: 5%;
     align-items: center;
 }
+
 .logoEmpresa {
     width: 8vw;
     align-items: center;
     background-color: whitesmoke;
 }
+
 .searchBox {
     background-color: whitesmoke;
     width: 40vw;
     margin-left: 15vw;
+    margin-right: 10vw;
 }
+
 .cuentaUsuario {
     background-color: whitesmoke;
     display: inline-flex;
-    width: 25vw;
+    width: 250px;
     gap: 15%;
     justify-content: space-around;
 }
- 
+
 /* inicio barra de navegacion */
- 
+
 .navBar {
     width: 100vw;
     height: 40px;
@@ -52,71 +56,184 @@
     background-color: lightgreen;
     padding-top: 10px;
 }
+
 .navBar ul {
     display: flex;
     justify-content: space-around;
 }
- 
+
 .navBar ul li {
     list-style-type: none;
-   
+
 }
- 
+
 /* inicio banner main */
- 
+
 .mainBanner {
     width: 100vw;
     height: 350px;
     background-color
 }
+
 .inferiorBanner {
     display: flex;
     justify-content: space-between;
 }
+
 .imgInferiorBanner {
     width: 33%;
     height: 60px;
     background-color: lightseagreen;
     margin-top: 8px;
 }
- 
+
 /* inicio productos main */
+.productosContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .productosDestacados {
-    width: 80vw;
+    width: 1000px;
     height: 350px;
     background-color: lightpink;
-    margin: 10%;
+    margin-top: 50px;
     display: flex;
 }
+
 .destacadosImg {
-    width: 20vw;
+    width: 20%;
     height: 350px;
     background-color: whitesmoke;
 }
+
 .producto {
-    width: 15vw;
+    width: 18%;
     height: 310px;
     background-color: lightyellow;
     margin-top: 2.5vh;
     margin-right: 1vw;
     margin-left: 1vw;
 }
- 
+
 /* inicio grilla imagenes */
- 
+.grillaContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .grillaImg {
-    width: 80vw;
+    width: 1000px;
     height: 350px;
     background-color: lightpink;
-    margin: 10%;
-    display: flex;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
 }
-.grillaImgSup {
-    background-color: green;
- 
-}
+
 .imgEnlace {
     width: 320px;
     height: 160px;
     background-color: whitesmoke;
+}
+.bannerEnlace {
+    width: 990px;
+    height: 250px;
+    background-color: whitesmoke;
+}
+.grillaImg2 {
+    width: 1000px;
+    height: 450px;
+    background-color: lightpink;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    grid-template-areas: 
+    "imgEnlace7 imgEnlace8 imgEnlace9"
+    "bannerEnlace bannerEnlace bannerEnlace"
+    "bannerEnlace bannerEnlace bannerEnlace"
+    ;
+}
+.imgEnlace7 {
+grid-area: imgEnlace7;
+}
+.imgEnlace8 {
+    grid-area: imgEnlace8;
+}
+.imgEnlace9 {
+    grid-area: imgEnlace9;
+}
+.bannerEnlace {
+    grid-area: bannerEnlace;
+}
+/* newsletter registro*/
+.newsletter {
+    width: 100%;
+    height: 300px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.newsletterTexto {
+    width: 60%;
+    height: 60%;
+    margin-top: 25px;
+    background-color: grey;
+}
+.newsletterRegistro {
+    width: 40%;
+    height: 20%;
+    margin-top: 25px;
+    background-color: lightgreen;
+}
+/* inicio footer */
+Footer {
+    width: 100%;
+    background-color: darkgrey;
+    display: grid;
+    row-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "categorias contactanos conectados"
+    "categorias contactanos conectados"
+    "categorias contactanos conectados"
+    "categorias contactanos conectados"
+    ". copyright ."
+    ;
+}
+.categoriasFooter {
+    grid-area: categorias;
+    padding-left: 100px;
+    background-color: lightskyblue;
+    width: 100%;
+}
+.contactanosFooter {
+    grid-area: contactanos;
+    width: 100%;
+    padding-left: 100px;
+    background-color: lightskyblue;
+}
+.socialNetworksFooter {
+    grid-area: conectados;
+    width: 100%;
+    padding-left: 100px;
+    background-color: lightskyblue;
+}
+.copyright {
+    grid-area: copyright;
+    justify-self: center;
 }
