@@ -11,13 +11,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
+    background-color: #005BB9;
 }
-
+.headerSuperior p {
+    color: white;
+}
 .headerMain {
     width: 100vw;
     height: 130px;
-    background-color: lightcoral;
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
     padding-left: 2%;
@@ -30,20 +32,38 @@
     align-items: center;
     background-color: whitesmoke;
 }
+.logoEmpresa img {
+    height: 60px;
+}
 
 .searchBox {
-    background-color: whitesmoke;
+    background-color: blue;
     width: 40vw;
     margin-left: 15vw;
     margin-right: 10vw;
 }
 
-.cuentaUsuario {
+.iconosHeader {
     background-color: whitesmoke;
     display: inline-flex;
     width: 250px;
     gap: 15%;
     justify-content: space-around;
+}
+
+.iconosHeader img {
+    height: 35px;
+    
+}
+
+header a {
+    text-decoration: none;
+}
+header a:link {
+    color: black;
+}
+header a:visited {
+    color: black;
 }
 
 /* inicio barra de navegacion */
@@ -53,7 +73,7 @@
     height: 40px;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: lightgreen;
+    background-color: rgb(219, 217, 217);
     padding-top: 10px;
 }
 
@@ -69,25 +89,28 @@
 
 /* inicio banner main */
 
-.mainBanner {
-    width: 100vw;
+.mainBanner img {
     height: 350px;
-    background-color
+    width: 100vw;
+    min-width: 900px;
 }
-
 .inferiorBanner {
     display: flex;
     justify-content: space-between;
 }
-
 .imgInferiorBanner {
     width: 33%;
+    height: 65px;
+    background-color: #F4F4F4;
+    margin-top: 5px;
+}
+.imgInferiorBanner img {
     height: 60px;
-    background-color: lightseagreen;
-    margin-top: 8px;
+    width: 350px;
 }
 
 /* inicio productos main */
+
 .productosContainer {
     display: flex;
     justify-content: center;
@@ -100,6 +123,9 @@
     margin-top: 50px;
     display: flex;
 }
+.productosDestacados img {
+    height: 350px;
+}
 
 .destacadosImg {
     width: 20%;
@@ -110,10 +136,14 @@
 .producto {
     width: 18%;
     height: 310px;
-    background-color: lightyellow;
+    background-color: red;
     margin-top: 2.5vh;
     margin-right: 1vw;
     margin-left: 1vw;
+    padding-top: 35px;
+}
+.producto img {
+    height: 175px;
 }
 
 /* inicio grilla imagenes */
@@ -134,16 +164,13 @@
     align-items: center;
     gap: 5px;
 }
-
-.imgEnlace {
+.imgEnlace img {
     width: 320px;
     height: 160px;
-    background-color: whitesmoke;
 }
-.bannerEnlace {
+.bannerEnlace img {
     width: 990px;
     height: 250px;
-    background-color: whitesmoke;
 }
 .grillaImg2 {
     width: 1000px;
@@ -160,23 +187,24 @@
     align-items: center;
     gap: 5px;
     grid-template-areas: 
-    "imgEnlace7 imgEnlace8 imgEnlace9"
+    "imgEnlace1 imgEnlace2 imgEnlace3"
     "bannerEnlace bannerEnlace bannerEnlace"
     "bannerEnlace bannerEnlace bannerEnlace"
     ;
 }
 .imgEnlace7 {
-grid-area: imgEnlace7;
+grid-area: imgEnlace1;
 }
 .imgEnlace8 {
-    grid-area: imgEnlace8;
+    grid-area: imgEnlace2;
 }
 .imgEnlace9 {
-    grid-area: imgEnlace9;
+    grid-area: imgEnlace3;
 }
 .bannerEnlace {
     grid-area: bannerEnlace;
 }
+
 /* newsletter registro*/
 .newsletter {
     width: 100%;

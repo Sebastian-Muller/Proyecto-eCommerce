@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina ventas</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
@@ -13,41 +15,47 @@
 <body>
     <header>
         <div class="headerSuperior">
-            <h5>ventas online</h5>
+            <p> Venta Telefónica 342-4567890</p>
         </div>
 
         <div class="headerMain">
             <div class="logoEmpresa">
-                <h1>logo</h1>
+                <a href="#"><img src="./img/Logos/logo-ipsum.svg" alt="Logo de empresa"></a>
             </div>
             <div class="searchBox">
                 <h2>buscador</h2>
             </div>
-            <div class="cuentaUsuario">
+            <div class="iconosHeader">
                 <div>
-                    <h3>ayuda</h3>
-                    <p>ayuda</p>
+                    <a href="#">
+                        <img src="./img/Logos/ayuda.png" alt="Ayuda">
+                        <p>Ayuda</p>
+                    </a>
                 </div>
                 <div>
-                    <h3>mi cuenta</h3>
-                    <p>mi cuenta</p>
+                    <a href="#">
+                        <img src="./img/Logos/usuario.png" alt="Mi cuenta">
+                        <p>Mi cuenta</p>
+                    </a>
                 </div>
                 <div>
-                    <h3>carrito</h3>
-                    <p>carrito</p>
+                    <a href="#">
+                        <img src="./img/Logos/carrito-de-compras.png" alt="Carrito de comras">
+                        <p>Mi carrito</p>
+                    </a>
                 </div>
             </div>
         </div>
-        <hr>
+        
         <div class="navBar">
             <ul>
-                <li>categoria</li>
-                <li>categoria</li>
-                <li>categoria</li>
-                <li>categoria</li>
-                <li>categoria</li>
-                <li>categoria</li>
-                <li>categoria</li>
+                <li> <a href="#">TECNOLOGÍAS </a></li>
+                <li> <a href="#">INFORMATICA</a></li>
+                <li> <a href="#">ELECTROHOGAR</a></li>
+                <li> <a href="#">ELECTRODÓMESTICOS</a></li>
+                <li> <a href="#">HERRAMIENTAS</a></li>
+                <li> <a href="#">CLIMATIZACÍON</a></li>
+                <li> <a href="#">MUEBLES & COLCHONES</a></li>
             </ul>
         </div>
     </header>
@@ -55,113 +63,157 @@
 
         <section>
             <div class="mainBanner">
-                <h1>BANNER</h1>
+                <a href="#"><img src="./img/banners/main-banner-1.jpg" alt=""></a>
             </div>
             <div class="inferiorBanner">
                 <div class="imgInferiorBanner">
-                    <h3>formas de pago</h3>
+                    <img src="./img/categorias/envio-gratis.png" alt="Envios gratis">
                 </div>
                 <div class="imgInferiorBanner">
-                    <h3>envios a todo el pais</h3>
+                    <img src="./img/categorias/cambios-devoluciones.png" alt="cambios y devoluciones gratis">
                 </div>
                 <div class="imgInferiorBanner">
-                    <h3>retiro gratis </h3>
+                    <img src="./img/categorias/cuotas-s-interes.png" alt="Cuotas sin interes">
                 </div>
             </div>
         </section>
 
         <section class="productosContainer">
             <div class="productosDestacados">
-
-                <div class="destacadosImg"></div>
-                <div class="producto"></div>
-                <div class="producto"></div>
-                <div class="producto"></div>
-                <div class="producto"></div>
+                <div class="destacadosImg">
+                    <img src="./img/categorias/mas-vendido.png" alt="Mas vendidos">
+                </div>
+                <div class="producto">
+                    <a href="#"><img src="./img/productos/heladera.png" alt="Producto"></a>
+                    <p class="nombreProducto">Heladera nofrost Samsung</p>
+                    <p class="precioProducto">$99.999</p>
+                    <p class="cuotasProducto"><b>6</b> x <b>$9.999</b></p>
+                </div>
+                <div class="producto">
+                    <a href="#"><img src="./img/productos/lavarropas.jpg" alt="Producto"></a>
+                    <p class="nombreProducto">Lavarropas ftal Longvie</p>
+                    <p class="precioProducto">$99.999</p>
+                    <p class="cuotasProducto"><b>6</b> x <b>$9.999</b></p>
+                </div>
+                <div class="producto">
+                    <a href="#"><img src="./img/productos/smarthphone.jpg" alt="Producto"></a>
+                    <p class="nombreProducto">Motorola MOTO G22</p>
+                    <p class="precioProducto">$99.999</p>
+                    <p class="cuotasProducto"><b>6</b> x <b>$9.999</b></p>
+                </div>
+                <div class="producto">
+                    <a href="#"><img src="./img/productos/guiarra-electrica.jpg" alt="Producto"></a>
+                    <p class="nombreProducto">Guitarra elect. Kansas</p>
+                    <p class="precioProducto">$99.999</p>
+                    <p class="cuotasProducto"><b>6</b> x <b>$9.999</b></p>
+                </div>
             </div>
         </section>
 
         <section class="grillaContainer">
             <div class="grillaImg">
-                <div class="imgEnlace imgEnlace1">
-                    <h3>imagen con enlace</h3>
+                <div class="imgEnlace">
+                    <a href="#"><img src="./img/categorias/colchones.jpg" alt="Colchones"></a>
                 </div>
-                <div class="imgEnlace imgEnlace2">
-                    <h3>imagen con enlace</h3>
+                <div class="imgEnlace">
+                    <a href="#"><img src="./img/categorias/electrodomesticos.jpg" alt="Electrodomesticos"></a>
                 </div>
-                <div class="imgEnlace imgEnlace3">
-                    <h3>imagen con enlace</h3>
+                <div class="imgEnlace">
+                    <a href="#"><img src="./img/categorias/tecnologia.jpg" alt="Tecnología"></a>
                 </div>
-
-                <div class="imgEnlace imgEnlace4">
-                    <h3>imagen con enlace</h3>
+                <div class="imgEnlace">
+                    <a href="#"><img src="./img/categorias/electrodomesticos.jpg" alt="Electrodomesticos"></a>
                 </div>
-                <div class="imgEnlace imgEnlace5">
-                    <h3>imagen con enlace</h3>
+                <div class="imgEnlace">
+                    <a href="#"><img src="./img/categorias/tecnologia.jpg" alt="Tecnología"></a>
                 </div>
-                <div class="imgEnlace imgEnlace6">
-                    <h3>imagen con enlace</h3>
+                <div class="imgEnlace">
+                    <a href="#"><img src="./img/categorias/colchones.jpg" alt="Colchones"></a>
                 </div>
             </div>
         </section>
 
         <section class="productosContainer">
             <div class="productosDestacados">
-                <div class="destacadosImg"></div>
-                <div class="producto"></div>
-                <div class="producto"></div>
-                <div class="producto"></div>
-                <div class="producto"></div>
+                <div class="destacadosImg">
+                    <img src="./img/categorias/mas-vendido.png" alt="Mas vendidos">
+                </div>
+
+                <div class="producto">
+                    <a href="#"><img src="./img/productos/guiarra-electrica.jpg" alt="Producto"></a>
+                    <p class="nombreProducto">Guitarra elect. Kansas</p>
+                    <p class="precioProducto">$99.999</p>
+                    <p class="cuotasProducto"><b>6</b> x <b>$9.999</b></p>
+                </div>
+                <div class="producto">
+                    <a href="#"><img src="./img/productos/lavarropas.jpg" alt="Producto"></a>
+                    <p class="nombreProducto">Lavarropas ftal Longvie</p>
+                    <p class="precioProducto">$99.999</p>
+                    <p class="cuotasProducto"><b>6</b> x <b>$9.999</b></p>
+                </div>
+                <div class="producto">
+                    <a href="#"><img src="./img/productos/heladera.png" alt="Producto"></a>
+                    <p class="nombreProducto">Heladera nofrost Samsung</p>
+                    <p class="precioProducto">$99.999</p>
+                    <p class="cuotasProducto"><b>6</b> x <b>$9.999</b></p>
+                </div>
+                <div class="producto">
+                    <a href="#"><img src="./img/productos/smarthphone.jpg" alt="Producto"></a>
+                    <p class="nombreProducto">Motorola MOTO G22</p>
+                    <p class="precioProducto">$99.999</p>
+                    <p class="cuotasProducto"><b>6</b> x <b>$9.999</b></p>
+                </div>
+
             </div>
         </section>
 
         <section class="grillaContainer">
             <div class="grillaImg2">
-                <div class="imgEnlace imgEnlace7">
-                    <h3>imagen con enlace</h3>
+                <div class="imgEnlace imgEnlace1">
+                    <a href="#"><img src="./img/categorias/tecnologia.jpg" alt="Tecnología"></a>
                 </div>
-                <div class="imgEnlace imgEnlace8">
-                    <h3>imagen con enlace</h3>
+                <div class="imgEnlace imgEnlace2">
+                    <a href="#"><img src="./img/categorias/electrodomesticos.jpg" alt="Electrodomesticos"></a>
                 </div>
-                <div class="imgEnlace imgEnlace9">
-                    <h3>imagen con enlace</h3>
+                <div class="imgEnlace imgEnlace3">
+                    <a href="#"><img src="./img/categorias/colchones.jpg" alt="Colchones"></a>
                 </div>
                 <div class="bannerEnlace">
-                    <h3>imagen con enlace</h3>
+                    <a href="#"><img src="./img/banners/banner-categoria.jpg" alt="Jardineria"></a>
                 </div>
             </div>
         </section>
         <section class="newsletter">
             <div class="newsletterTexto">
-                <p>asd</p>
-                <p>asd</p>
-                <p>asd</p>
+                <p>NEWSLETTER</p>
+                <p>Recibí todas las ofertas</p>
+                <p>¿Querés recobor nuestras ofertas?¡Registrate ya mismo y comenzá a disfrutarlas!</p>
             </div>
             <div class="newsletterRegistro">
             </div>
         </section>
         <footer>
-                   <div class="categoriasFooter">
-                    <h4>Categorias</h4>
-                    <ul>
-                        <li>Tecnología</li>
-                        <li>Climatizacíon</li>
-                        <li>Electrohogar</li>
-                    </ul>
-                </div>
-                <div class="contactanosFooter">
-                    <h4>Contactános</h4>
-                    <ul>
-                        <li>wapp</li>
-                        <li>tel</li>
-                        <li>email</li>
-                    </ul>
-                </div>
-                <div class="socialNetworksFooter">
-                    <h4>Sigamos conectados</h4>
-                    <p>fb ig tw</p>
-                </div>
-       
+            <div class="categoriasFooter">
+                <h4>Categorias</h4>
+                <ul>
+                    <li>Tecnología</li>
+                    <li>Climatizacíon</li>
+                    <li>Electrohogar</li>
+                </ul>
+            </div>
+            <div class="contactanosFooter">
+                <h4>Contactános</h4>
+                <ul>
+                    <li>wapp</li>
+                    <li>tel</li>
+                    <li>email</li>
+                </ul>
+            </div>
+            <div class="socialNetworksFooter">
+                <h4>Sigamos conectados</h4>
+                <p>fb ig tw</p>
+            </div>
+
             <div class="copyright">
                 <p>Copyright 2022. Todos los derechos reservados. </p>
             </div>
@@ -169,6 +221,7 @@
 
     </main>
 
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
-
 </html>
