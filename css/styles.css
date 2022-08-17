@@ -20,13 +20,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #005BB9;
+    background-color: #004c97;
 }
 
 .headerSuperior p {
     color: white;
     font-family: 'Fira Sans Condensed', sans-serif;
     padding-top: 15px;
+    font-size: 13px;
 }
 
 .headerMain {
@@ -54,7 +55,7 @@
 
 .searchBox {
     width: 35vw;
-    margin-left: -5vw;
+    
     position: relative;
     display: flex;
 }
@@ -67,8 +68,9 @@
     height: 38px;
     border-radius: 8px 0 0 8px;
     outline: none;
-    
+
 }
+
 .searchButton {
     width: 40px;
     height: 38px;
@@ -86,7 +88,7 @@
     width: 30%;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
 }
 
@@ -98,24 +100,36 @@
     gap: 15%;
     justify-content: space-around;
 }
+
 .iconosHeader p {
     font-size: 15px;
     text-align: center;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: bold;
 }
+
+.iconosHeader a p:hover {
+    font-weight: lighter;
+}
+
 .iconoUsuario {
     margin-left: 13px;
 }
+
 .iconoAyuda {
     margin-left: 5px;
 }
+
 .iconosHeader img {
     height: 35px;
 }
 
 header a {
     text-decoration: none;
+}
+
+header a:hover {
+    font-weight: lighter;
 }
 
 header a:link {
@@ -131,15 +145,17 @@ header a:visited {
 .navBar {
     width: 100vw;
     height: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: rgb(219, 217, 217);
     padding-top: 10px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .navBar ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .navBar ul li {
@@ -157,7 +173,7 @@ header a:visited {
 
 .inferiorBanner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .imgInferiorBanner {
@@ -201,32 +217,36 @@ header a:visited {
     width: 18%;
     height: 310px;
     background-color: #F5F5F5;
-    margin-top: 2.5vh;
-    margin-right: 1vw;
-    margin-left: 1vw;
-    padding-top: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-inline: 10px;
+    padding-top: 30px;
 }
+
 .producto img {
-    height: 175px;
+    height: 190px;
 }
+
 .producto p {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 15px;
-    padding-top: 18px;
-    padding-left: 10px;
+    padding-top: 20px;
     margin-bottom: 0px;
 }
+
 .producto p b {
     color: red;
     font-weight: 400px;
-    font-size: 16px;
+    font-size: 15px;
 }
+
 .producto p small {
-    font-size: 13px;
+    font-size: 12px;
     color: rgb(119, 119, 119);
 }
+
 /* inicio grilla imagenes */
 .grillaContainer {
     display: flex;
@@ -295,29 +315,34 @@ header a:visited {
 .newsletter {
     width: 100%;
     height: 300px;
-    background-color: #005BB9;
+    background-color: #004080;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
 }
+
 .newsletter h5 {
     color: white;
     text-align: center;
     font-family: 'Kanit', sans-serif;
+    font-size: 20px;
     padding-top: 35px;
     margin-bottom: -20px;
 }
+
 .newsletter p {
     font-family: 'Kanit', sans-serif;
     color: white;
     text-align: center;
     padding-top: 20px;
 }
+
 #newsletterOfertas {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: -10px;
 }
+
 /* box suscripcion newsletter */
 
 .newsletterSubs {
@@ -330,7 +355,8 @@ header a:visited {
     height: 40px;
     background: whitesmoke;
 
-    border-radius: 10px 0 0 10px; }
+    border-radius: 10px 0 0 10px;
+}
 
 .btn {
     height: 40px;
@@ -338,6 +364,7 @@ header a:visited {
     border-radius: 0 10px 10px 0;
     background: whitesmoke;
 }
+
 .btn svg {
     height: 30px;
     width: 25px;
@@ -346,42 +373,137 @@ header a:visited {
 /* inicio footer */
 Footer {
     width: 100%;
-    background-color: darkgrey;
+    background-color: rgb(214, 214, 214);
     display: grid;
     row-gap: 5px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    padding-top: 3vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 120px 30px;
     grid-template-areas:
-        "categorias contactanos conectados"
-        "categorias contactanos conectados"
-        "categorias contactanos conectados"
-        "categorias contactanos conectados"
-        ". copyright ."
+        "categorias contactanos mDPagos conectados"
+        "copyright copyright copyright copyright"
     ;
 }
 
 .categoriasFooter {
     grid-area: categorias;
-    padding-left: 100px;
-    background-color: lightskyblue;
     width: 100%;
+    justify-self: center;
+    background-color: rgb(214, 214, 214);
+
+}
+
+.categoriasFooter h4 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #004080;
+    text-align: start;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.categoriasFooter ul li {
+    color: #002e5c;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: start;
+    font-size: 13px;
 }
 
 .contactanosFooter {
     grid-area: contactanos;
     width: 100%;
-    padding-left: 100px;
-    background-color: lightskyblue;
+    text-align: start;
+    background-color: rgb(214, 214, 214);
+    margin-left: -10vw;
+}
+
+.contactanosFooter h4 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #004080;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contactanosFooter ul li {
+    color: #004080;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: start;
+    margin-left: 6.5vw;
+    font-size: 13px;
+    padding-block: 3px;
+}
+
+.contactanosFooter ul li img {
+    height: 20px;
+    padding-right: 1vw;
+}
+
+.mediosDePago {
+    grid-area: mDPagos;
+    width: 100%;
+    text-align: center;
+}
+
+.mediosDePago h4 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #004080;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.mediosDePago img {
+    height: 20px;
+    display: inline-flex;
 }
 
 .socialNetworksFooter {
     grid-area: conectados;
-    width: 100%;
+    width: 80%;
+    text-align: center;
     padding-left: 100px;
-    background-color: lightskyblue;
+    background-color: rgb(214, 214, 214);
+}
+
+.socialNetworksFooter h4 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #004080;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.socialNetworksFooter img {
+    height: 35px;
+}
+
+footer ul li {
+    list-style: none;
 }
 
 .copyright {
     grid-area: copyright;
-    justify-self: center;
+    height: 30px;
+    width: 100vw;
+    background-color: rgb(199, 199, 199);
 }
+
+.copyright p {
+    font-size: small;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* inicio pagina login */
+
+.loginFormContainer {
+    height: 70%;
+    width: 30%;
+    margin-top: 10vh;
+    margin-left: 35vw;
+    margin-bottom: 10vh;
+}
+
+/* https://mdbootstrap.com/docs/standard/extended/login/#! */
+/* https://github.com/kevinadhiguna/login-form-bootstrap5 */
