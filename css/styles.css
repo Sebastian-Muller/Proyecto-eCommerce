@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap');
+/* font-family: 'Fira Sans Condensed', sans-serif; (nombre productos) */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+/* font-family: 'PT Sans Caption', sans-serif; (categorias) */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* font-family: 'Lexend Deca', sans-serif; (footer) */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+/* font-family: 'Kanit', sans-serif; (newsletter) */
+
 * {
     padding: 0;
     margin: 0;
@@ -13,9 +22,13 @@
     align-items: center;
     background-color: #005BB9;
 }
+
 .headerSuperior p {
     color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    padding-top: 15px;
 }
+
 .headerMain {
     width: 100vw;
     height: 130px;
@@ -32,36 +45,83 @@
     align-items: center;
     background-color: whitesmoke;
 }
+
 .logoEmpresa img {
     height: 60px;
 }
 
+/* inicio buscador */
+
 .searchBox {
-    background-color: blue;
-    width: 40vw;
-    margin-left: 15vw;
-    margin-right: 10vw;
+    width: 35vw;
+    margin-left: -5vw;
+    position: relative;
+    display: flex;
 }
 
+.searchTerm {
+    width: 100%;
+    border: 2px solid grey;
+    border-right: none;
+    padding: 5px;
+    height: 38px;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    
+}
+.searchButton {
+    width: 40px;
+    height: 38px;
+    padding-bottom: 5px;
+    border: 1px solid #005BB9;
+    background: #005BB9;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* fin buscador  */
+
 .iconosHeader {
-    background-color: whitesmoke;
     display: inline-flex;
-    width: 250px;
+    width: 280px;
     gap: 15%;
     justify-content: space-around;
 }
-
+.iconosHeader p {
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+.iconoUsuario {
+    margin-left: 13px;
+}
+.iconoAyuda {
+    margin-left: 5px;
+}
 .iconosHeader img {
     height: 35px;
-    
 }
 
 header a {
     text-decoration: none;
 }
+
 header a:link {
     color: black;
 }
+
 header a:visited {
     color: black;
 }
@@ -84,7 +144,7 @@ header a:visited {
 
 .navBar ul li {
     list-style-type: none;
-
+    font-family: 'PT Sans Caption', sans-serif;
 }
 
 /* inicio banner main */
@@ -94,16 +154,19 @@ header a:visited {
     width: 100vw;
     min-width: 900px;
 }
+
 .inferiorBanner {
     display: flex;
     justify-content: space-between;
 }
+
 .imgInferiorBanner {
     width: 33%;
     height: 65px;
     background-color: #F4F4F4;
     margin-top: 5px;
 }
+
 .imgInferiorBanner img {
     height: 60px;
     width: 350px;
@@ -119,10 +182,11 @@ header a:visited {
 .productosDestacados {
     width: 1000px;
     height: 350px;
-    background-color: lightpink;
+    background-color: #F5F5F5;
     margin-top: 50px;
     display: flex;
 }
+
 .productosDestacados img {
     height: 350px;
 }
@@ -130,13 +194,13 @@ header a:visited {
 .destacadosImg {
     width: 20%;
     height: 350px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .producto {
     width: 18%;
     height: 310px;
-    background-color: red;
+    background-color: #F5F5F5;
     margin-top: 2.5vh;
     margin-right: 1vw;
     margin-left: 1vw;
@@ -145,7 +209,24 @@ header a:visited {
 .producto img {
     height: 175px;
 }
-
+.producto p {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 15px;
+    padding-top: 18px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+.producto p b {
+    color: red;
+    font-weight: 400px;
+    font-size: 16px;
+}
+.producto p small {
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+}
 /* inicio grilla imagenes */
 .grillaContainer {
     display: flex;
@@ -155,7 +236,6 @@ header a:visited {
 .grillaImg {
     width: 1000px;
     height: 350px;
-    background-color: lightpink;
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -164,18 +244,20 @@ header a:visited {
     align-items: center;
     gap: 5px;
 }
+
 .imgEnlace img {
     width: 320px;
     height: 160px;
 }
+
 .bannerEnlace img {
     width: 990px;
     height: 250px;
 }
+
 .grillaImg2 {
     width: 1000px;
     height: 450px;
-    background-color: lightpink;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 1%;
@@ -186,21 +268,25 @@ header a:visited {
     justify-items: center;
     align-items: center;
     gap: 5px;
-    grid-template-areas: 
-    "imgEnlace1 imgEnlace2 imgEnlace3"
-    "bannerEnlace bannerEnlace bannerEnlace"
-    "bannerEnlace bannerEnlace bannerEnlace"
+    grid-template-areas:
+        "imgEnlace1 imgEnlace2 imgEnlace3"
+        "bannerEnlace bannerEnlace bannerEnlace"
+        "bannerEnlace bannerEnlace bannerEnlace"
     ;
 }
+
 .imgEnlace7 {
-grid-area: imgEnlace1;
+    grid-area: imgEnlace1;
 }
+
 .imgEnlace8 {
     grid-area: imgEnlace2;
 }
+
 .imgEnlace9 {
     grid-area: imgEnlace3;
 }
+
 .bannerEnlace {
     grid-area: bannerEnlace;
 }
@@ -209,24 +295,54 @@ grid-area: imgEnlace1;
 .newsletter {
     width: 100%;
     height: 300px;
-    background-color: lightblue;
+    background-color: #005BB9;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
 }
-.newsletterTexto {
-    width: 60%;
-    height: 60%;
-    margin-top: 25px;
-    background-color: grey;
+.newsletter h5 {
+    color: white;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    padding-top: 35px;
+    margin-bottom: -20px;
 }
-.newsletterRegistro {
-    width: 40%;
+.newsletter p {
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+#newsletterOfertas {
+    font-size: 50px;
+    margin-bottom: -10px;
+}
+/* box suscripcion newsletter */
+
+.newsletterSubs {
+    width: 45%;
     height: 20%;
     margin-top: 25px;
-    background-color: lightgreen;
 }
+
+.form-control {
+    height: 40px;
+    background: whitesmoke;
+
+    border-radius: 10px 0 0 10px; }
+
+.btn {
+    height: 40px;
+    width: 60px;
+    border-radius: 0 10px 10px 0;
+    background: whitesmoke;
+}
+.btn svg {
+    height: 30px;
+    width: 25px;
+}
+
 /* inicio footer */
 Footer {
     width: 100%;
@@ -235,32 +351,36 @@ Footer {
     row-gap: 5px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "categorias contactanos conectados"
-    "categorias contactanos conectados"
-    "categorias contactanos conectados"
-    "categorias contactanos conectados"
-    ". copyright ."
+    grid-template-areas:
+        "categorias contactanos conectados"
+        "categorias contactanos conectados"
+        "categorias contactanos conectados"
+        "categorias contactanos conectados"
+        ". copyright ."
     ;
 }
+
 .categoriasFooter {
     grid-area: categorias;
     padding-left: 100px;
     background-color: lightskyblue;
     width: 100%;
 }
+
 .contactanosFooter {
     grid-area: contactanos;
     width: 100%;
     padding-left: 100px;
     background-color: lightskyblue;
 }
+
 .socialNetworksFooter {
     grid-area: conectados;
     width: 100%;
     padding-left: 100px;
     background-color: lightskyblue;
 }
+
 .copyright {
     grid-area: copyright;
     justify-self: center;
