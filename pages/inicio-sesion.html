@@ -22,7 +22,7 @@
         </div>
         <div class="headerMain">
             <div class="logoEmpresa">
-                <a href="#"><img src="../img/Logos/logo-ipsum.svg" alt="Logo de empresa"></a>
+                <a href="../index.html"><img src="../img/Logos/logo-ipsum.svg" alt="Logo de empresa"></a>
             </div>
 
             <div class="searchBox">
@@ -77,64 +77,52 @@
             </ul>
         </div>
     </header>
-    <main>
-<h2>Iniciar sesión</h2>
+
+    <main class="loginMain">
         <!-- bootstrap sing in/register form -->
         <section class="loginFormContainer">
-        <form>
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form2Example1" class="form-control" />
-              <label class="form-label" for="form2Example1">Email address</label>
-            </div>
-          
-            <!-- Password input -->
-            <div class="form-outline mb-4">
-              <input type="password" id="form2Example2" class="form-control" />
-              <label class="form-label" for="form2Example2">Password</label>
-            </div>
-          
-            <!-- 2 column grid layout for inline styling -->
-            <div class="row mb-4">
-              <div class="col d-flex justify-content-center">
-                <!-- Checkbox -->
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-                  <label class="form-check-label" for="form2Example31"> Remember me </label>
+            <form class="border border-light p-4">
+
+                <p class="h2 mb-4 text-center">Iniciar sesión</p>
+
+                <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+                <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Contraseña">
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                            <label class="custom-control-label" for="defaultLoginFormRemember">Recuérdame</label>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
                 </div>
-              </div>
-          
-              <div class="col">
-                <!-- Simple link -->
-                <a href="#!">Forgot password?</a>
-              </div>
+                <div class="btn2Container">
+                <button class="btn2" type="submit">INICIAR SESIÓN</button>
             </div>
-          
-            <!-- Submit button -->
-            <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
-          
-            <!-- Register buttons -->
-            <div class="text-center">
-              <p>Not a member? <a href="#!">Register</a></p>
-              <p>or sign up with:</p>
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-facebook-f"></i>
-              </button>
-          
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-google"></i>
-              </button>
-          
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-twitter"></i>
-              </button>
-          
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-github"></i>
-              </button>
-            </div>
-          </form>
-          </section>
+                <div class="text-center">
+                    <p>¿No tenés cuenta? <a href="#">Crear cuenta</a>
+                    </p>
+
+                    <p>iniciar sesion con:</p>
+                    <a type="button" class="light-blue-text mx-2">
+                        <img src="../img/Logos/facebook.png" alt="">
+                    </a>
+                    <a type="button" class="light-blue-text mx-2">
+                        <img src="../img/Logos/twitter.png" alt="">
+                    </a>
+                    <a type="button" class="light-blue-text mx-2">
+                        <img src="../img/Logos/google.png" alt="">
+                    </a>
+                    <a type="button" class="light-blue-text mx-2">
+                        <img src="../img/Logos/linkedin.png" alt="">
+                    </a>
+                </div>
+            </form>
+        </section>
         <!-- bootstrap sing in/register form -->
 
 
