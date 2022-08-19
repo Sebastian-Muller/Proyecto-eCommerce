@@ -15,7 +15,7 @@
 
 /* inicio header */
 .headerSuperior {
-    width: 100vw;
+    width: 100%;
     height: 25px;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
 }
 
 .headerMain {
-    width: 100vw;
+    width: 100%;
     height: 130px;
     background-color: whitesmoke;
     display: flex;
@@ -52,7 +52,6 @@
 }
 
 /* inicio buscador */
-
 .searchBox {
     width: 35vw;
     position: relative;
@@ -92,7 +91,6 @@
 }
 
 /* fin buscador  */
-
 .iconosHeader {
     display: inline-flex;
     width: 280px;
@@ -105,10 +103,6 @@
     text-align: center;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: bold;
-}
-
-.iconosHeader a p:hover {
-    font-weight: lighter;
 }
 
 .iconoUsuario {
@@ -127,10 +121,6 @@ header a {
     text-decoration: none;
 }
 
-header a:hover {
-    font-weight: lighter;
-}
-
 header a:link {
     color: black;
 }
@@ -140,35 +130,80 @@ header a:visited {
 }
 
 /* inicio barra de navegacion */
-
 .navBar {
-    width: 100vw;
-    height: 40px;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: rgb(219, 217, 217);
-    padding-top: 10px;
-    font-size: 13px;
-    font-weight: bold;
+    background: #DBD9D9;
+    color: #FFF;
+    height: 35px;
+    padding-left: 18px;
+    border-radius: 0px;
+}
+
+.navBar ul,
+.navBar li {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none
 }
 
 .navBar ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.navBar ul li {
-    list-style-type: none;
+.navBar li {
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+.navBar a {
+    display: block;
+    line-height: 40px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #000000;
     font-family: 'PT Sans Caption', sans-serif;
-    padding-right: 10px;
+    font-size: 13px;
+}
+
+.navBar li a:hover {
+    color: #FFFFFF;
+    background: #004080;
+    height: 35px;
+}
+
+.navBar input {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 35px;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer
+}
+
+.navBar label {
+    display: none;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    left: 35px
+}
+
+.navBar label:before {
+    font-size: 1.6em;
+    content: "\2261";
+    color: black;
+    margin-left: 20px;
 }
 
 /* inicio banner main */
 
 .mainBanner img {
-    height: 350px;
-    width: 100vw;
-    min-width: 900px;
+    
+    width: 100%;
+    min-width: 1025px;
 }
 
 .inferiorBanner {
@@ -189,16 +224,14 @@ header a:visited {
 }
 
 /* inicio productos main */
-
 .productosContainer {
     display: flex;
     justify-content: center;
-    width: 900px;
-    padding-left: 450px;
+    width: 100%;
 }
 
 .productosDestacados {
-    width: 1000px;
+    width: 990px;
     height: 350px;
     background-color: #F5F5F5;
     margin-top: 50px;
@@ -219,8 +252,8 @@ header a:visited {
     width: 190px;
     height: 350px;
     background-color: #F5F5F5;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 6px;
+    margin-right: 7px;
     padding-top: 30px;
 }
 
@@ -364,6 +397,7 @@ header a:visited {
     border-radius: 0 10px 10px 0;
     background: whitesmoke;
 }
+
 .btn svg {
     height: 30px;
     width: 25px;
@@ -496,7 +530,6 @@ footer ul li {
 }
 
 /* inicio pagina login */
-
 .loginFormContainer {
     height: 470px;
     width: 400px;
@@ -505,6 +538,7 @@ footer ul li {
     margin-bottom: 3%;
     background-color: whitesmoke;
 }
+
 .loginFormContainer p {
     font-family: 'Kanit', sans-serif;
     color: #004080;
@@ -513,16 +547,20 @@ footer ul li {
 .d-flex a {
     text-decoration: none;
 }
+
 .text-center a {
     text-decoration: none;
 }
+
 .text-center a img {
     height: 32px;
 }
+
 .btn2Container {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 .btn2 {
     height: 40px;
     width: 100%;
@@ -533,20 +571,22 @@ footer ul li {
 }
 
 /* inicio lista de productos */
-
 .h2Grilla {
     height: 120px;
     padding-top: 40px;
     padding-left: 65px;
 }
+
 .h2Grilla h2 {
     font-family: 'Kanit', sans-serif;
     color: #004080;
 }
+
 .paginaProductosMain {
     display: flex;
     height: 1400px;
 }
+
 .subCategoria {
     height: 100%;
     width: 15vw;
@@ -555,34 +595,42 @@ footer ul li {
     margin-top: 25px;
     font-family: 'Lexend Deca', sans-serif;
 }
+
 .subCategoria h6 {
     color: #004080;
 }
+
 .subCategoria ul li {
     list-style: none;
     font-weight: lighter;
     padding-bottom: 15px;
 }
+
 .subCategoria ul li a {
     text-decoration: none;
     font-family: 'Lexend Deca', sans-serif;
     text-align: start;
     font-size: 13px;
 }
+
 .subCategoria ul li a:link {
     color: black;
 }
+
 .subCategoria ul li a:visited {
     color: black;
 }
+
 .subCategoria ul li a:hover {
     color: #004080;
     font-size: 16px;
 }
+
 .grillaProductosContainer {
     height: 450px;
     width: 100%;
 }
+
 .productosDesplegable {
     width: 100%;
     height: 50px;
@@ -590,6 +638,7 @@ footer ul li {
     padding-left: 35px;
     padding-bottom: 20px;
 }
+
 .grillaProductos {
     display: flex;
     flex-direction: row;
@@ -603,10 +652,71 @@ footer ul li {
 
 .btnGrilla {
     width: 300px;
-    padding-left: 36%;
+    padding-left: 33%;
 }
 
 .productoGrilla {
     width: 210px;
     padding-left: 10px;
 }
+
+/* comienzo maquetacion responsive */
+@media(max-width: 1024px) {}
+
+@media(max-width: 768px) {
+    .navBar ul {
+        background: #DBD9D9;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        height: auto;
+        display: none
+    }
+
+    .navBar ul.sub-menus {
+        width: 100%;
+        position: static;
+    }
+
+    .navBar ul.sub-menus a {
+        padding-left: 30px;
+    }
+
+    .navBar li {
+        display: block;
+        float: none;
+        width: auto;
+    }
+
+    .navBar input,
+    .navBar label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block
+    }
+
+    .navBar input {
+        z-index: 4
+    }
+
+    .navBar input:checked+label {
+        color: black
+    }
+
+    .navBar input:checked+label:before {
+        content: "\00d7"
+    }
+
+    .navBar input:checked~ul {
+        display: block
+    }
+
+    .navBar {
+        position: relative
+    }
+}
+
+@media(max-width: 480px) {}
