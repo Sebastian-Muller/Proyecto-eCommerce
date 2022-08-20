@@ -15,7 +15,7 @@
 
 /* inicio header */
 .headerSuperior {
-    width: 100%;
+    width: 100vw;
     height: 25px;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
 }
 
 .headerMain {
-    width: 100%;
+    width: 100vw;
     height: 130px;
     background-color: whitesmoke;
     display: flex;
@@ -93,7 +93,7 @@
 /* fin buscador  */
 .iconosHeader {
     display: inline-flex;
-    width: 280px;
+    width: 15vw;
     gap: 15%;
     justify-content: space-around;
 }
@@ -131,8 +131,9 @@ header a:visited {
 
 /* inicio barra de navegacion */
 .navBar {
+    width: 100vw;
     background: #DBD9D9;
-    color: #FFF;
+    color: #FFFFFF;
     height: 35px;
     padding-left: 18px;
     border-radius: 0px;
@@ -146,7 +147,7 @@ header a:visited {
 }
 
 .navBar ul {
-    width: 100%;
+    width: 90vw;
     display: flex;
     justify-content: space-between;
 }
@@ -169,7 +170,7 @@ header a:visited {
 
 .navBar li a:hover {
     color: #FFFFFF;
-    background: #004080;
+    background: #3871aa;
     height: 35px;
 }
 
@@ -200,74 +201,102 @@ header a:visited {
 
 /* inicio banner main */
 
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .mainBanner img {
-    
-    width: 100%;
-    min-width: 1025px;
+    width: 100vw;
 }
 
 .inferiorBanner {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .imgInferiorBanner {
-    width: 33%;
-    height: 65px;
+    width: 33vw;
     background-color: #F4F4F4;
     margin-top: 5px;
+
 }
 
 .imgInferiorBanner img {
-    height: 60px;
-    width: 350px;
+    width: 20vw;
 }
 
 /* inicio productos main */
+
+.titulo-linea {
+    font-family: 'Kanit', sans-serif;
+    margin-top: 5vh;
+    margin-left: 15vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.titulo-linea:after {
+    position: relative;
+    margin-left: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
+    content: '';
+    bottom: 5px;
+}
+
 .productosContainer {
+    width: 100vw;
+    height: 50vh;
     display: flex;
+    flex-flow: row wrap;
+    align-content: center;
     justify-content: center;
-    width: 100%;
-}
-
-.productosDestacados {
-    width: 990px;
-    height: 350px;
-    background-color: #F5F5F5;
-    margin-top: 50px;
-    display: flex;
-}
-
-.productosDestacados img {
-    height: 350px;
-}
-
-.destacadosImg {
-    width: 180px;
-    height: 350px;
-    background-color: white;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    margin-top: 5vh;
+    gap: 1%;
 }
 
 .producto {
-    width: 190px;
-    height: 350px;
-    background-color: #F5F5F5;
-    margin-left: 6px;
-    margin-right: 7px;
-    padding-top: 30px;
+    background-color: #F4F4F4;
+    width: 17vw;
+    min-width: 200px;
+    height: 34vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
 }
-
+.prodImg {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(224, 224, 224);
+}
+.prodDescripcion {
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 20px;
+}
 .producto img {
-    height: 190px;
+    width: 10vw;
+    min-width: 180px;
 }
 
 .producto p {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: 600;
     font-size: 18px;
-    line-height: 15px;
+    line-height: 1px;
     padding-top: 20px;
     margin-bottom: 0px;
+}
+.textoTachado {
+    text-decoration: line-through; 
+    color:gray; 
+    font-size: smaller;
 }
 
 .producto p b {
@@ -283,25 +312,19 @@ header a:visited {
 
 /* inicio grilla imagenes */
 .grillaContainer {
+    width: 100vw;
+    margin-top: 5vw;
     display: flex;
-    justify-content: center;
-}
-
-.grillaImg {
-    width: 1000px;
-    height: 350px;
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
+    flex-flow: row wrap;
     justify-items: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    padding-left: 10vw;
 }
 
 .imgEnlace img {
-    width: 320px;
-    height: 160px;
+    width: 25vw;
+    
 }
 
 .bannerEnlace img {
@@ -661,7 +684,8 @@ footer ul li {
 }
 
 /* comienzo maquetacion responsive */
-@media(max-width: 1024px) {}
+
+/* @media(max-width: 1024px) {} */
 
 @media(max-width: 768px) {
     .navBar ul {
@@ -719,4 +743,4 @@ footer ul li {
     }
 }
 
-@media(max-width: 480px) {}
+/* @media(max-width: 480px) {} */
