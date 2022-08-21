@@ -768,7 +768,7 @@ footer ul li {
     }
      .productosContainer {
         width: 100vw;
-        height: 700px;
+        height: 1200px;
         display: flex;
         flex-flow: row wrap;
         align-content: center;
@@ -779,6 +779,7 @@ footer ul li {
     .producto {
         width: 17vw;
         min-width: 200px;
+
         height: 270px;
         display: flex;
         flex-flow: column wrap;
