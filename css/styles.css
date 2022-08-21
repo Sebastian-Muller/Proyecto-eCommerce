@@ -233,7 +233,7 @@ main {
 
 .titulo-linea {
     font-family: 'Kanit', sans-serif;
-    margin-top: 5vh;
+    margin-top: 50px;
     margin-left: 15vh;
     display: flex;
     flex-flow: row wrap;
@@ -256,7 +256,6 @@ main {
     align-content: center;
     justify-content: center;
     padding: 5vw;
-    margin-top: 5vh;
     gap: 1%;
 }
 
@@ -304,13 +303,12 @@ main {
 /* inicio grilla imagenes */
 .grillaContainer {
     width: 100vw;
-    margin-top: 5vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10vh;
+    margin-bottom: 50px;
     padding-left: 10vw;
     padding-right: 10vw;
 }
@@ -322,12 +320,11 @@ main {
 
 .bannerEnlace {
     width: 100vw;
-    margin-top: 5vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10vh;
+    margin-bottom: 50px;
     padding-left: 10vw;
     padding-right: 10vw;
 }
@@ -400,7 +397,7 @@ main {
 Footer {
     width: 100vw;
     background-color: #d6d6d6;
-    padding-top: 3vh;
+    padding-top: 30px;
 }
 .footerContainer {
     display: flex;
@@ -455,13 +452,13 @@ footer ul li {
 
 .copyright {
     background-color: #acaaaa;
-    margin-bottom: -4vh;
+    margin-bottom: -35px;
 
 }
 .copyright p {
     font-size: small;
     text-align: center;
-    padding-top: 3px;
+
 }
 
 /* inicio pagina login */
@@ -506,6 +503,7 @@ footer ul li {
 }
 
 /* inicio lista de productos */
+
 .h2Grilla {
     height: 120px;
     padding-top: 40px;
@@ -663,7 +661,6 @@ footer ul li {
         flex-flow: row wrap;
         align-content: center;
         justify-content: center;
-        margin-top: 5vh;
         gap: 5%
     }
 
@@ -674,7 +671,7 @@ footer ul li {
         display: flex;
         flex-flow: column wrap;
         align-content: center;
-        margin-top: 5vh;
+        margin-top: 20px;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     }
 }
@@ -697,7 +694,7 @@ footer ul li {
         align-content: center;
         justify-content: center;
         padding-right: 35vw;
-        padding-bottom: 2vh;
+        padding-bottom: 20px;
     }
 
     .iconosHeader {
@@ -752,7 +749,7 @@ footer ul li {
 
     /* footer <= 768  */
     .footerContainer {
-        height: 35vh;
+        height: 250px;
     }
 }
 
@@ -771,7 +768,7 @@ footer ul li {
     }
      .productosContainer {
         width: 100vw;
-        height: 180vh;
+        height: 700px;
         display: flex;
         flex-flow: row wrap;
         align-content: center;
@@ -793,10 +790,5 @@ footer ul li {
     .newsletter {
         display: none;
     }
-
-/* footer <= 480  */
-.footerContainer {
-    height: 40vh;
-}
 
 } 
