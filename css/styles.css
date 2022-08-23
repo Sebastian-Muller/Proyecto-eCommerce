@@ -380,6 +380,7 @@ main {
     background: whitesmoke;
     border-radius: 10px 10px 10px 10px;
 }
+
 .btn {
     height: 40px;
     width: 60px;
@@ -398,12 +399,14 @@ Footer {
     background-color: #d6d6d6;
     padding-top: 30px;
 }
+
 .footerContainer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     gap: 3%;
 }
+
 .footerContainer div {
     width: 150px;
 }
@@ -425,9 +428,11 @@ Footer {
     font-size: 16px;
     width: 130px;
 }
+
 .mediosDePago div {
     margin-left: 25px;
 }
+
 .categoriasFooter ul li a {
     color: #002e5c;
     text-decoration: none;
@@ -465,6 +470,7 @@ footer ul li {
     margin-bottom: -35px;
 
 }
+
 .copyright p {
     font-size: small;
     text-align: center;
@@ -479,7 +485,9 @@ footer ul li {
     justify-content: center;
     gap: 1%;
 }
-.loginFormContainer, .registerFormContainer {
+
+.loginFormContainer,
+.registerFormContainer {
     height: 470px;
     width: 400px;
     margin-top: 5%;
@@ -487,7 +495,8 @@ footer ul li {
     background-color: whitesmoke;
 }
 
-.loginFormContainer p, .registerFormContainer p {
+.loginFormContainer p,
+.registerFormContainer p {
     font-family: 'Kanit', sans-serif;
     color: #004080;
 }
@@ -508,6 +517,7 @@ footer ul li {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 .btn2 {
     height: 40px;
     width: 100%;
@@ -583,6 +593,7 @@ footer ul li {
     padding-left: 35px;
     padding-bottom: 20px;
 }
+
 .categoriaDesplegable {
     display: none;
 }
@@ -696,6 +707,7 @@ footer ul li {
         margin-top: 25px;
         font-family: 'Lexend Deca', sans-serif;
     }
+
     .categoriaDesplegable {
         display: none;
     }
@@ -711,6 +723,7 @@ footer ul li {
         padding-top: 10px;
         padding-left: 5px;
     }
+
     .btn2Container {
         width: 300px;
         margin-left: 30%;
@@ -721,7 +734,7 @@ footer ul li {
 @media(max-width: 768px) {
 
     /* header  <= 768 */
-    
+
     .searchBox {
         display: none;
     }
@@ -796,19 +809,22 @@ footer ul li {
     .footerContainer {
         height: flex;
     }
+
     .socialNetworksFooter {
         padding-bottom: 10px;
     }
 
     /* inicio pagina login-register  */
-    .loginFormContainer, .registerFormContainer {
+    .loginFormContainer,
+    .registerFormContainer {
         margin-top: 2%;
         margin-bottom: 2%;
     }
+
     .subCategoria {
         display: none;
     }
-    
+
     .containerGrilla {
         width: 100vw;
         height: auto;
@@ -820,12 +836,13 @@ footer ul li {
         padding-top: 10px;
         padding-left: 5px;
     }
-    
+
     .categoriaDesplegable {
         display: initial;
-        
-        
+
+
     }
+
     .grillaProductos {
         display: flex;
         flex-wrap: nowrap;
@@ -842,17 +859,18 @@ footer ul li {
 
 @media(max-width: 480px) {
 
-     /* header <=480px  */
-     .logoEmpresa {
+    /* header <=480px  */
+    .logoEmpresa {
         padding-right: 70%;
-        }
-
-     /* productos <=480px  */
-     .titulo-linea {
-        margin-left: 5vw;
-        
     }
-     .productosContainer {
+
+    /* productos <=480px  */
+    .titulo-linea {
+        margin-left: 5vw;
+
+    }
+
+    .productosContainer {
         width: 100vw;
         height: 1300px;
         display: flex;
@@ -882,17 +900,20 @@ footer ul li {
     .mediosDePago {
         padding-bottom: 20px;
     }
+
     .btn2Container {
         width: 300px;
         margin-left: 15%;
     }
-} 
+}
+
 @media(max-width: 350px) {
     .btn2Container {
         width: 300px;
         margin-left: 3%;
     }
+
     .categoriaDesplegable {
         margin-bottom: 10px;
     }
-} 
+}
