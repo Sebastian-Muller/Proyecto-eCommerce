@@ -250,7 +250,7 @@ main {
 
 .productosContainer {
     width: 100vw;
-    height: 50vh;
+    height: 40vw;
     display: flex;
     flex-flow: row wrap;
     align-content: center;
@@ -380,7 +380,6 @@ main {
     background: whitesmoke;
     border-radius: 10px 10px 10px 10px;
 }
-
 .btn {
     height: 40px;
     width: 60px;
@@ -418,6 +417,17 @@ Footer {
     font-size: 16px;
 }
 
+.mediosDePago h4 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #004080;
+    text-align: start;
+    font-weight: bold;
+    font-size: 16px;
+    width: 130px;
+}
+.mediosDePago div {
+    margin-left: 25px;
+}
 .categoriasFooter ul li a {
     color: #002e5c;
     text-decoration: none;
@@ -462,16 +472,22 @@ footer ul li {
 }
 
 /* inicio pagina login */
-.loginFormContainer {
+
+.loginMain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1%;
+}
+.loginFormContainer, .registerFormContainer {
     height: 470px;
     width: 400px;
-    margin-left: 35%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     background-color: whitesmoke;
 }
 
-.loginFormContainer p {
+.loginFormContainer p, .registerFormContainer p {
     font-family: 'Kanit', sans-serif;
     color: #004080;
 }
@@ -488,11 +504,10 @@ footer ul li {
     height: 32px;
 }
 
-.btn2Container {
+.btnContainer {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
 .btn2 {
     height: 40px;
     width: 100%;
@@ -517,14 +532,14 @@ footer ul li {
 
 .paginaProductosMain {
     display: flex;
-    height: 1400px;
+    flex-wrap: nowrap;
 }
 
 .subCategoria {
     height: 100%;
-    width: 15vw;
+    width: 10vw;
     min-width: 150px;
-    margin-left: 5vw;
+    margin-left: 3vw;
     margin-top: 25px;
     font-family: 'Lexend Deca', sans-serif;
 }
@@ -559,10 +574,7 @@ footer ul li {
     font-size: 16px;
 }
 
-.grillaProductosContainer {
-    height: 450px;
-    width: 100%;
-}
+/* inicio container productos */
 
 .productosDesplegable {
     width: 100%;
@@ -571,33 +583,34 @@ footer ul li {
     padding-left: 35px;
     padding-bottom: 20px;
 }
+.categoriaDesplegable {
+    display: none;
+}
 
-.grillaProductos {
+.containerGrilla {
+    width: 80vw;
+    height: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 70vw;
-    min-width: 1150px;
-    height: 400px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 1%;
+    padding-top: 10px;
+    padding-left: 5px;
 }
 
-.btnGrilla {
+.btn2Container {
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 300px;
-    padding-left: 33%;
-}
-
-.productoGrilla {
-    width: 210px;
-    padding-left: 10px;
+    margin-left: 36%;
 }
 
 /* comienzo maquetacion responsive */
 
-@media(max-width: 1000px) {
+@media(max-width: 1024px) {
 
-    /* barra de navegacion <=1000px  */
+    /* barra de navegacion <=1024px  */
     .navBar ul {
         background: #DBD9D9;
         position: absolute;
@@ -652,11 +665,11 @@ footer ul li {
         position: relative
     }
 
-    /* productos <=1000px  */
+    /* productos <=1024px  */
 
     .productosContainer {
         width: 100vw;
-        height: 100vh;
+        height: 70vw;
         display: flex;
         flex-flow: row wrap;
         align-content: center;
@@ -673,6 +686,34 @@ footer ul li {
         align-content: center;
         margin-top: 20px;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    }
+
+    /* inicio productos pagina grilla */
+    .subCategoria {
+        height: 100%;
+        width: 5vw;
+        min-width: 130px;
+        margin-top: 25px;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    .categoriaDesplegable {
+        display: none;
+    }
+
+    .containerGrilla {
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: center;
+        gap: 1%;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+    .btn2Container {
+        width: 300px;
+        margin-left: 30%;
     }
 }
 
@@ -747,10 +788,55 @@ footer ul li {
         display: none;
     }
 
+    .productosContainer {
+        height: 85vw;
+    }
+
     /* footer <= 768  */
     .footerContainer {
-        height: 250px;
+        height: flex;
     }
+    .socialNetworksFooter {
+        padding-bottom: 10px;
+    }
+
+    /* inicio pagina login-register  */
+    .loginFormContainer, .registerFormContainer {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .subCategoria {
+        display: none;
+    }
+    
+    .containerGrilla {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: center;
+        gap: 1%;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+    
+    .categoriaDesplegable {
+        display: initial;
+        
+        
+    }
+    .grillaProductos {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        gap: 1vw;
+        padding-top: 20px;
+        padding-left: 1vw;
+    }
+
 }
 
 
@@ -788,9 +874,25 @@ footer ul li {
         margin-top: 5vh;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     }
-/* inicio newsletter */
+
     .newsletter {
         display: none;
     }
 
+    .mediosDePago {
+        padding-bottom: 20px;
+    }
+    .btn2Container {
+        width: 300px;
+        margin-left: 15%;
+    }
+} 
+@media(max-width: 350px) {
+    .btn2Container {
+        width: 300px;
+        margin-left: 3%;
+    }
+    .categoriaDesplegable {
+        margin-bottom: 10px;
+    }
 } 

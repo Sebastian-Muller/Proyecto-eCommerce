@@ -74,7 +74,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="loginMain">
         <!-- bootstrap sing in/register form -->
         <section class="loginFormContainer">
             <form class="border border-light p-4">
@@ -92,13 +92,42 @@
                         <a href="#">¿Olvidaste tu contraseña?</a>
                     </div>
                 </div>
-                <div class="btn2Container">
+                <div class="btnContainer">
                 <button class="btn2" type="submit">INICIAR SESIÓN</button>
             </div>
                 <div class="text-center">
                     <p>¿No tenés cuenta? <a href="#">Crear cuenta</a>
                     </p>
-                    <p>iniciar sesion con:</p>
+                    <p>iniciar sesión con:</p>
+                    <a type="button" class="light-blue-text mx-2">
+                        <img src="../img/Logos/facebook.png" alt="">
+                    </a>
+                    <a type="button" class="light-blue-text mx-2">
+                        <img src="../img/Logos/twitter.png" alt="">
+                    </a>
+                    <a type="button" class="light-blue-text mx-2">
+                        <img src="../img/Logos/google.png" alt="">
+                    </a>
+                    <a type="button" class="light-blue-text mx-2">
+                        <img src="../img/Logos/linkedin.png" alt="">
+                    </a>
+                </div>
+            </form>
+        </section>
+
+        <section class="registerFormContainer">
+            <form class="border border-light p-4">
+                <p class="h2 mb-4 text-center">Registrarse</p>
+                <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+                <input type="text" id="registerName" class="form-control mb-4" placeholder="Nombre y apellido">
+                <input type="password" id="registerPassword" class="form-control mb-4" placeholder="Contraseña">
+                <input type="password" id="registerRepeatPassword" class="form-control mb-4" placeholder="Confirmar contraseña">
+                
+                <div>
+                <button class="btn2" type="submit">REGISTRARSE</button>
+            </div>
+                <div class="text-center">
+                    <p>iniciar sesión con:</p>
                     <a type="button" class="light-blue-text mx-2">
                         <img src="../img/Logos/facebook.png" alt="">
                     </a>

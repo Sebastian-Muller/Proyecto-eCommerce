@@ -89,10 +89,19 @@
                     <li><a href="#">Categoria 6</a></li>
                 </ul>
             </div>
-            <div class="grillaProductosContainer">
+            <div>
                 <div class="productosDesplegable">
+                    <label for="filtro-categoria" ></label>
+                    <select name="filtro-categoria" class="categoriaDesplegable">
+                        <option value="Categoria-0">Categorias</option>
+                        <option value="Categoria-1">Categoria 1</option>
+                        <option value="Categoria-2">Categoria 2</option>
+                        <option value="Categoria-3">Categoria 3</option>
+                        <option value="Categoria-4">Categoria 4</option>
+                    </select>
                     <label for="tipo-orden"></label>
-                    <select name="tipoOrden">
+                    <select name="tipo-orden">
+                        <option value="seleccion-orden">Ordenar</option>
                         <option value="mas-vendido">Más Vendidos</option>
                         <option value="precio-descendente">Precio: Mayor a Menor</option>
                         <option value="precio-ascendente">Precio: Menor a Mayor</option>
@@ -100,107 +109,85 @@
                         <option value="alfa-descendente">Z-A</option>
                     </select>
                 </div>
-                <div class="grillaProductos">
-                    <div class="producto productoGrilla">
+                <section class="containerGrilla">
+                    <div class="producto">
                         <a href="#"><img src="../img/productos/heladera.png" alt="Heladera"></a>
                         <p class="nombreProducto">Heladera nofrost</p>
                         <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
                         <p class="precioProducto"> <span class="textoTachado">  $99.999</span> $99.999</p>
                     </div>
-                    <div class="producto productoGrilla">
-                        <a href="#"><img src="../img/productos/lavarropas.jpg" alt="Producto"></a>
-                        <p class="nombreProducto">Lavarropas Longvie</p>
+                    <div class="producto">
+                        <a href="#"><img src="../img/productos/guiarra-electrica.jpg" alt="Producto"></a>
+                        <p class="nombreProducto">Guitarra elect. Kansas</p>
                         <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
                         <p class="precioProducto">$99.999</p>
                     </div>
-                    <div class="producto productoGrilla">
+                    <div class="producto">
                         <a href="#"><img src="../img/productos/smarthphone.jpg" alt="Producto"></a>
                         <p class="nombreProducto">Motorola MOTO G22</p>
                         <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
                         <p class="precioProducto"> <span class="textoTachado">  $99.999</span> $99.999</p>
                     </div>
-                    <div class="producto productoGrilla">
+                    <div class="producto">
                         <a href="#"><img src="../img/productos/guiarra-electrica.jpg" alt="Producto"></a>
                         <p class="nombreProducto">Guitarra elect. Kansas</p>
                         <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
                         <p class="precioProducto">$99.999</p>
                     </div>
-                    <div class="producto productoGrilla">
-                        <a href="#"><img src="../img/productos/lavarropas.jpg" alt="Producto"></a>
-                        <p class="nombreProducto">Lavarropas Longvie</p>
+                    <div class="producto">
+                        <a href="#"><img src="../img/productos/smarthphone.jpg" alt="Producto"></a>
+                        <p class="nombreProducto">Motorola MOTO G22</p>
                         <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
                         <p class="precioProducto"> <span class="textoTachado">  $99.999</span> $99.999</p>
                     </div>
-                </div>
-                <div class="grillaProductos">
-                    <div class="producto productoGrilla">
-                        <a href="#"><img src="../img/productos/lavarropas.jpg" alt="Producto"></a>
-                        <p class="nombreProducto">Lavarropas Longvie</p>
-                        <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
-                        <p class="precioProducto"> <span class="textoTachado">  $99.999</span> $99.999</p>
-                    </div>
-                    <div class="producto productoGrilla">
-                        <a href="#"><img src="../img/productos/guiarra-electrica.jpg" alt="Producto"></a>
-                        <p class="nombreProducto">Guitarra elect. Kansas</p>
-                        <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
-                        <p class="precioProducto">$99.999</p>
-                    </div>
-                    <div class="producto productoGrilla">
+                    <div class="producto">
                         <a href="#"><img src="../img/productos/heladera.png" alt="Heladera"></a>
                         <p class="nombreProducto">Heladera nofrost</p>
                         <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
                         <p class="precioProducto"> <span class="textoTachado">  $99.999</span> $99.999</p>
                     </div>
-                    <div class="producto productoGrilla">
+                    <div class="producto">
+                        <a href="#"><img src="../img/productos/lavarropas.jpg" alt="Producto"></a>
+                        <p class="nombreProducto">Lavarropas Longvie</p>
+                        <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
+                        <p class="precioProducto"> <span class="textoTachado">  $99.999</span> $99.999</p>
+                    </div>
+                    <div class="producto">
+                        <a href="#"><img src="../img/productos/heladera.png" alt="Heladera"></a>
+                        <p class="nombreProducto">Heladera nofrost</p>
+                        <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
+                        <p class="precioProducto"> <span class="textoTachado">  $99.999</span> $99.999</p>
+                    </div>
+                    <div class="producto">
                         <a href="#"><img src="../img/productos/smarthphone.jpg" alt="Producto"></a>
                         <p class="nombreProducto">Motorola MOTO G22</p>
                         <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
                         <p class="precioProducto"> <span class="textoTachado">  $99.999</span> $99.999</p>
                     </div>
-                    <div class="producto productoGrilla">
-                        <a href="#"><img src="../img/productos/guiarra-electrica.jpg" alt="Producto"></a>
-                        <p class="nombreProducto">Guitarra elect. Kansas</p>
-                        <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
-                        <p class="precioProducto">$99.999</p>
-                    </div>
-                </div>
-                <div class="grillaProductos">
-                    <div class="producto productoGrilla">
+                    <div class="producto">
                         <a href="#"><img src="../img/productos/heladera.png" alt="Heladera"></a>
                         <p class="nombreProducto">Heladera nofrost</p>
                         <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
                         <p class="precioProducto">$99.999</p>
                     </div>
-                    <div class="producto productoGrilla">
-                        <a href="#"><img src="../img/productos/smarthphone.jpg" alt="Producto"></a>
-                        <p class="nombreProducto">Motorola MOTO G22</p>
-                        <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
-                        <p class="precioProducto"> <span class="textoTachado">  $99.999</span> $99.999</p>
-                    </div>
-                    <div class="producto productoGrilla">
+                    <div class="producto">
                         <a href="#"><img src="../img/productos/guiarra-electrica.jpg" alt="Producto"></a>
                         <p class="nombreProducto">Guitarra elect. Kansas</p>
                         <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
                         <p class="precioProducto">$99.999</p>
                     </div>
-                    <div class="producto productoGrilla">
+                    <div class="producto">
                         <a href="#"><img src="../img/productos/lavarropas.jpg" alt="Producto"></a>
                         <p class="nombreProducto">Lavarropas Longvie</p>
                         <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
                         <p class="precioProducto">$99.999</p>
                     </div>
-                    <div class="producto productoGrilla">
-                        <a href="#"><img src="../img/productos/smarthphone.jpg" alt="Producto"></a>
-                        <p class="nombreProducto">Motorola MOTO G22</p>
-                        <p class="cuotasProducto"><b>6</b> <small>cuotas sin interes de </small><b>$9.999</b></p>
-                        <p class="precioProducto"> <span class="textoTachado">  $99.999</span> $99.999</p>
-                    </div>
-                </div>
-                <div class="btnGrilla">
+            </section>
+
                     <div class="btn2Container">
                         <button class="btn2 btnGrilla" type="submit">MOSTRAR MAS PRODUCTOS</button>
                     </div>
-                </div>
+
         </section>
     </main>
     <footer>
