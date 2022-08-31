@@ -620,7 +620,7 @@ footer ul li {
 
 /* comienzo maquetacion responsive */
 
-@media(max-width: 1024px) {
+@media(max-width: 1023px) {
 
     /* barra de navegacion <=1024px  */
     .navBar ul {
@@ -804,6 +804,9 @@ footer ul li {
 
     .productosContainer {
         height: 85vw;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* footer <= 768  */
