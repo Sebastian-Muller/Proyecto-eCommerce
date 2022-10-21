@@ -46,6 +46,12 @@
     width: 8vw;
     align-items: center;
     background-color: whitesmoke;
+    transition: 1s;
+}
+
+.logoEmpresa:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
 }
 
 .logoEmpresa img {
@@ -105,6 +111,11 @@
     text-align: center;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: bold;
+}
+
+.iconosHeader div:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .iconoUsuario {
@@ -174,6 +185,7 @@ header a:visited {
     color: #FFFFFF;
     background: #3871aa;
     height: 35px;
+    transition: 0.5s;
 }
 
 .navBar input {
@@ -250,7 +262,7 @@ main {
 
 .productosContainer {
     width: 100vw;
-    height: 40vw;
+    height: 500px;
     display: flex;
     flex-flow: row wrap;
     align-content: center;
@@ -266,8 +278,12 @@ main {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px;
     margin-bottom: 1%;
+    transition: 0.3s;
+}
+.producto:hover {
+    box-shadow: rgba(17, 17, 26, 0.2) 10px 10px 15px;
 }
 
 .producto img {
@@ -317,6 +333,10 @@ main {
 .grillaContainer img {
     width: 23vw;
     min-width: 260px;
+    transition: 0.7s;
+}
+.grillaContainer img:hover { 
+opacity: 0.5;
 }
 
 .bannerEnlace {
@@ -334,6 +354,11 @@ main {
     width: 70vw;
     height: 250px;
     min-width: 800px;
+    transition: 0.7s;
+}
+
+.bannerEnlace img:hover {
+    opacity: 0.5;
 }
 
 /* newsletter registro*/
@@ -526,6 +551,13 @@ footer ul li {
     border-color: whitesmoke;
     background: #004080;
     color: whitesmoke;
+    transition: 0.5s;
+}
+
+.btn2:hover {
+    background-color: whitesmoke;
+    color: #004080;
+    border-color: #004080;
 }
 
 /* inicio lista de productos */
@@ -621,6 +653,10 @@ footer ul li {
 /* comienzo maquetacion responsive */
 
 @media(max-width: 1023px) {
+
+    .logoEmpresa {
+        transition: 0s;
+    }
 
     /* barra de navegacion <=1024px  */
     .navBar ul {
@@ -759,6 +795,10 @@ footer ul li {
         height: 4vh;
         gap: 0;
         background-color: #DBD9D9;
+    }
+    .iconosHeader div:hover {
+        transform: scale(1);
+        transition: 0.5s;
     }
 
     .iconosHeader div {
